@@ -1,5 +1,5 @@
 class TailorSkill < ApplicationRecord
     belongs_to :user
-    belongs_to :skill
-    belongs_to :categories
+    has_many :skills
+    belongs_to :category
 end
